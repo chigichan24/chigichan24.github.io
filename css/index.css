@@ -1,0 +1,15 @@
+.navbar.navbar-default{
+  background: #ffeaff;
+  border: 0px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.jumbotron{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #f9f9ff;
+
+}
