@@ -1,8 +1,17 @@
 .navbar.navbar-default{
-  background: #ffeaff;
+  background: #a10054;
   border: 0px;
   height: auto;
   margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar.navbar-default .nav.navbar-nav > li > a {
+  color: #d5d5d5;
+}
+
+.navbar.navbar-default .nav.navbar-nav > li > a:hover {
+  background: #ff8d68;
 }
 
 .jumbotron{
@@ -10,6 +19,10 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: #f9f9ff;
+  background: #ffecba;
+  color: #001f52;
+}
 
+.center{
+  text-align: center;
 }
