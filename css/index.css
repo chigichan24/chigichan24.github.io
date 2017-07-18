@@ -1,4 +1,4 @@
-.navbar.navbar-default{
+.navbar.navbar-fixed-top{
   background: #a10054;
   background: #ffaaa6;
   border: 0px;
@@ -7,11 +7,11 @@
   border-radius: 0px;
 }
 
-.navbar.navbar-default .nav.navbar-nav > li > a {
+.navbar.navbar-fixed-top .nav.navbar-nav > li > a {
   color: #d5d5d5;
 }
 
-.navbar.navbar-default .nav.navbar-nav > li > a:hover {
+.navbar.navbar-fixed-top .nav.navbar-nav > li > a:hover {
   background: #ff8d68;
   background: #ff8c94;
 }
@@ -65,4 +65,7 @@
     top: 14px;
     border-radius: 100%;
   }
+}
+body{
+  padding-top: 25px;
 }
