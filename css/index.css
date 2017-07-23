@@ -27,20 +27,28 @@
   color: #001f52;
 }
 .career{
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
 }
 
 .center{
+  display: block;
   text-align: center;
 }
 
 .timeline {
+  display: block;
   list-style: none;
 }
 .timeline > li {
+  display: block;
   margin-bottom: 60px;
+}
+.contents{
+  display: block;
+  margin-bottom: 940px;
 }
 
 /* for Desktop */
