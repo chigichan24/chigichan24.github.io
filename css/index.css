@@ -81,6 +81,12 @@
     border-radius: 100%;
   }
 }
+.dl-horizontal > dl{
+  width: 400px;
+}
+.dl-horizontal > dd{
+  margin-right: 500px;
+}
 body{
   padding-top: 25px;
 }
