@@ -36690,7 +36690,7 @@ else{u=F.bE(a,!1).a.a
 if(typeof u!=="number")return u.a1()
 if(u>1200)C.a.h(j,M.cH(n,U.A4(m,160,160),n,n,n,C.eH,n,n))
 else C.a.h(j,M.cH(n,U.A4(m,160,160),n,n,n,C.md,n,n))}u=L.dk("Kazuki Chigita / \u5343\u5317 \u4e00\u671f",A.h4(n,n,n,n,n,n,n,n,n,n,22,n,n,n,n,!0,n,n,n,n,n,n))
-t=L.dk("- Graduate student in computer sience at University of Tsukuba, Japan",n)
+t=L.dk("- Graduate student in computer science at University of Tsukuba, Japan",n)
 s=L.dk("- Software Engineer(mostly Android application development)",n)
 r=L.dk("- Interested in complex software development / signal processing problem, which can resolved by compressed sensing",n)
 q=A.h4(n,n,C.oH,n,C.dD,n,n,n,n,n,n,n,n,n,n,!0,n,n,n,n,n,n)
