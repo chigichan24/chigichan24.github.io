@@ -15,7 +15,8 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
-        cache: npm
+        with:
+          cache: npm
 
       - name: Install NPM packages
         run: npm ci
