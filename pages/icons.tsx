@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Icons.module.css';
 
 const Icons: NextPage = () => {
@@ -20,25 +19,25 @@ const Icons: NextPage = () => {
                 </h2>
                 <div className={styles.categoryIcons}>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2016" src="/logo/twitter/chigichan24_2016.png" width={200} height={200} />
+                        <img alt="chigichan24_2016" src="/logo/twitter/chigichan24_2016.png" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2017" src="/logo/twitter/chigichan24_2017.jpeg" width={200} height={200} />
+                        <img alt="chigichan24_2017" src="/logo/twitter/chigichan24_2017.jpeg" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2018" src="/logo/twitter/chigichan24_2018.jpg" width={200} height={200} />
+                        <img alt="chigichan24_2018" src="/logo/twitter/chigichan24_2018.jpg" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2019" src="/logo/twitter/chigichan24_2019.png" width={200} height={200} />
+                        <img alt="chigichan24_2019" src="/logo/twitter/chigichan24_2019.png" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2020" src="/logo/twitter/chigichan24_2020.png" width={200} height={200} />
+                        <img alt="chigichan24_2020" src="/logo/twitter/chigichan24_2020.png" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2021" src="/logo/twitter/chigichan24_2021.jpeg" width={200} height={200} />
+                        <img alt="chigichan24_2021" src="/logo/twitter/chigichan24_2021.jpeg" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image alt="chigichan24_2022" src="/logo/twitter/chigichan24_2022.png" width={200} height={200} />
+                        <img alt="chigichan24_2022" src="/logo/twitter/chigichan24_2022.png" width={200} height={200} />
                     </div>
                 </div>                
             </div>
@@ -48,10 +47,10 @@ const Icons: NextPage = () => {
                 </h2>
                 <div className={styles.categoryIcons}>
                     <div className={styles.categoryItem}>
-                        <Image className={styles.categoryItem} alt="chigichan24_2017" src="/logo/github/chigichan24_2017.jpg" width={200} height={200} />
+                        <img className={styles.categoryItem} alt="chigichan24_2017" src="/logo/github/chigichan24_2017.jpg" width={200} height={200} />
                     </div>
                     <div className={styles.categoryItem}>
-                        <Image className={styles.categoryItem} alt="chigichan24_2019" src="/logo/github/chigichan24_2019.png" width={200} height={200} />
+                        <img className={styles.categoryItem} alt="chigichan24_2019" src="/logo/github/chigichan24_2019.png" width={200} height={200} />
                     </div>
                 </div>
             </div>
