@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export", 
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/node": "17.0.9",
     "@types/react": "17.0.38",
+    "@types/react-pdf": "^5.0.9",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
     "typescript": "4.5.4"
