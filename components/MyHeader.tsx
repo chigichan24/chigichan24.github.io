@@ -32,10 +32,10 @@ const MyHeader: React.FC<MyHeaderProps> = (props: MyHeaderProps) => {
                         GitHub
                     </div>
                 </a>
-                <Link href="/resume">
+                <Link href="/profile">
                     <a>
                         <div className={styles.headerLinkItem}>
-                            RESUME(JA)
+                            Profile
                         </div>
                     </a>
                 </Link>
