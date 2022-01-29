@@ -1,12 +1,13 @@
 .container {
     padding: 0 0rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .content {
+    margin-bottom: 400px;
     font-size: 40px;
     animation: rotate 2s linear infinite;
     transform-origin: center;
