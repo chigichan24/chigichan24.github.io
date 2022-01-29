@@ -8,10 +8,10 @@ interface ImageTitleProps {
 const ImageTitle: React.FC<ImageTitleProps> = (props: ImageTitleProps) => {
     return <div className={styles.titleContainer}>
         <div className={styles.icon}>
-          <img alt="chigichan24" src="/chigichan24_2022.png" width={70} height={70} />
+            <img alt="chigichan24" src="/chigichan24_2022.png" width={70} height={70}/>
         </div>
         <h1 className={styles.title}>
-          Kazuki Chigita&apos;s Portfolio
+            Kazuki Chigita&apos;s Portfolio
         </h1>
     </div>
 }
