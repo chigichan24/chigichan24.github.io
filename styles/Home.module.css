@@ -24,3 +24,7 @@
         transform: rotate(360deg);
     }
 }
+
+.link:hover {
+    background-color: #fc0d0d;
+}
