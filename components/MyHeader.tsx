@@ -32,12 +32,13 @@ const MyHeader: React.FC<MyHeaderProps> = (props: MyHeaderProps) => {
                         GitHub
                     </div>
                 </a>
-                <a href="https://drive.google.com/file/d/1CT-qT_EpyoB4-0UH-LU8v6VYuNqfWN6j/view?usp=sharing"
-                   target="_blank" rel="noreferrer">
-                    <div className={styles.headerLinkItem}>
-                        RESUME(JA)
-                    </div>
-                </a>
+                <Link href="/resume">
+                    <a>
+                        <div className={styles.headerLinkItem}>
+                            RESUME(JA)
+                        </div>
+                    </a>
+                </Link>
             </div>
         </>
     )
