@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                 <div className={styles.content}>
                     アイコン一覧は
                     <Link href="/icons">
-                        <a>こちら</a>
+                        <a className={styles.link}>こちら</a>
                     </Link>
                 </div>
             </div>
