@@ -6,7 +6,7 @@ import MyHeader from "../components/MyHeader";
 const Icons: NextPage = () => {
     return (
         <>
-            <MyHeader headerTitle={"resume"}/>
+            <MyHeader headerTitle={"Icons"}/>
             <div className={styles.container}>
                 <main className={styles.main}>
                     <h1 className={styles.title}>
