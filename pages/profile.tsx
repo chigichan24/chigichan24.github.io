@@ -82,17 +82,17 @@ const Profile: NextPage = () => {
                     </p>
                     <p className={styles.description}>
                         2. Hiroyuki Kudo, <u>Kazuki Chigita</u>, Yongchae Kim and Jian Dong. 2019. Metal artifact
-                        reduction in CT using fault-tolerant image reconstruction. SPIE 2019. DOI:
+                        reduction in CT using fault-tolerant image reconstruction. SPIE 2019. DOI: 
                         <a className={styles.descriptionLink} href="https://doi.org/10.1117/12.2529169" target="_blank" rel="noreferrer">https://doi.org/10.1117/12.2529169</a>
                     </p>
                     <p className={styles.description}>
                         3. Yonchae Kim, Hiroyuki Kudo and <u>Kazuki Chigita</u>. 2019. Image reconstruction in
-                        sparse-view CT using improved nonlocal total variation regularization. SPIE 2019. DOI:
+                        sparse-view CT using improved nonlocal total variation regularization. SPIE 2019. DOI: 
                         <a className={styles.descriptionLink} href="https://doi.org/10.1117/12.2529164" target="_blank" rel="noreferrer">https://doi.org/10.1117/12.2529164</a>
                     </p>
                     <p className={styles.description}>
                         4. Tomoya Hirakawa, <u>Kazuki Chigita</u> and Yoshimitsu Kuroki. 2018. Distributed compressed
-                        hyper spectral image sensing using ADMM. IWAIT 2018. DOI:
+                        hyper spectral image sensing using ADMM. IWAIT 2018. DOI: 
                         <a className={styles.descriptionLink} href="https://doi.org/10.1109/IWAIT.2018.8369758" target="_blank" rel="noreferrer">https://doi.org/10.1109/IWAIT.2018.8369758</a>
                     </p>
 
@@ -107,5 +107,3 @@ const Profile: NextPage = () => {
         </>
     )
 }
-
-export default Profile;
