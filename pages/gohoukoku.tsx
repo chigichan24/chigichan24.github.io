@@ -9,10 +9,10 @@ const Home: NextPage = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                 <ruby>
-                <rb>結婚</rb>
-                <rp>（</rp>
+                結婚
+                <rp>(</rp>
                 <rt>ケコーン</rt>
-                <rp>）</rp>
+                <rp>)</rp>
                 </ruby>
                 しました。
                 </div>
