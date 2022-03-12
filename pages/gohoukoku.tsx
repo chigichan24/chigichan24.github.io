@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import styles from '../styles/gohoukoku.module.css'
+import styles from '../styles/Gohoukoku.module.css'
 import MyHeader from "../components/MyHeader";
 
 const Home: NextPage = () => {
