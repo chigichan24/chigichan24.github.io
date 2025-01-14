@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Header() {
   const [isDark, setIsDark] = useState(() => {
@@ -10,10 +11,7 @@ export function Header() {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
-  const [language, setLanguage] = useState(() => {
-    const savedLang = localStorage.getItem("language");
-    return savedLang || "en";
-  });
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
@@ -24,13 +22,8 @@ export function Header() {
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);
 
-  useEffect(() => {
-    localStorage.setItem("language", language);
-    document.documentElement.setAttribute("lang", language);
-  }, [language]);
-
   const toggleLanguage = () => {
-    setLanguage(prev => prev === "en" ? "ja" : "en");
+    setLanguage(language === "en" ? "ja" : "en");
   };
 
   return (
@@ -40,13 +33,13 @@ export function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/">{language === "en" ? "Home" : "ホーム"}</a>
+              <a href="/">{t("home")}</a>
             </li>
             <li>
-              <a href="/about">{language === "en" ? "About" : "概要"}</a>
+              <a href="/about">{t("about")}</a>
             </li>
             <li>
-              <a href="/contact">{language === "en" ? "Contact" : "お問い合わせ"}</a>
+              <a href="/contact">{t("contact")}</a>
             </li>
           </ul>
         </nav>
