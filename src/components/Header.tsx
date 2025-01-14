@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <header>
-      <h1>My Application</h1>
+      <h1>{t("header.title")}</h1>
       <div className="header-right">
         <nav>
           <ul>
@@ -46,9 +46,15 @@ export function Header() {
         <div className="buttons-container">
           <button onClick={toggleLanguage} className="lang-toggle">
             {language === "en" ? (
-              <>🇯🇵 <span>日本語</span></>
+              <>
+                <span className="flag-emoji">🇯🇵</span>
+                <span>日本語</span>
+              </>
             ) : (
-              <>🇺🇸 <span>English</span></>
+              <>
+                <span className="flag-emoji">🇺🇸</span>
+                <span>English</span>
+              </>
             )}
           </button>
           <button onClick={() => setIsDark(!isDark)} className="theme-toggle">

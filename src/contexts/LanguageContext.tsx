@@ -20,14 +20,16 @@ const translations: Translations = {
     "about": "About",
     "contact": "Contact",
     "welcome": "Welcome to My Application",
-    "main.content": "This is the main content area."
+    "main.content": "This is the main content area.",
+    "header.title": "Kazuki Chigita's Portfolio"
   },
   ja: {
-    "home": "ホーム",
-    "about": "概要",
-    "contact": "お問い合わせ",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
     "welcome": "アプリケーションへようこそ",
-    "main.content": "これはメインコンテンツエリアです。"
+    "main.content": "これはメインコンテンツエリアです。",
+    "header.title": "chigichan24のポートフォリオ"
   }
 };
 
