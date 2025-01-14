@@ -1,0 +1,155 @@
+/* Theme variables */
+:root[data-theme="light"] {
+  --header-bg: #ffffff;
+  --header-text: #333333;
+  --body-bg: #f5f5f5;
+  --body-text: #333333;
+}
+
+:root[data-theme="dark"] {
+  --header-bg: #333333;
+  --header-text: #ffffff;
+  --body-bg: #1a1a1a;
+  --body-text: #ffffff;
+}
+
+/* Apply theme to body */
+body {
+  margin: 0;
+  background-color: var(--body-bg);
+  color: var(--body-text);
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add a container for nav and theme toggle */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  min-width: 50px; /* Adjust this value based on your longest text */
+  text-align: center;
+}
+
+nav a {
+  color: var(--header-text);
+  text-decoration: none;
+  display: block; /* This ensures the link takes full width of li */
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--header-text);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--header-text);
+  transition: all 0.2s ease;
+  min-width: 120px; /* Adjust based on your content */
+  justify-content: center;
+}
+
+.lang-toggle:hover {
+  background-color: var(--header-text);
+  color: var(--header-bg);
+}
+
+.lang-toggle span {
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+/* Add new style for the flag emoji */
+.lang-toggle .flag-emoji {
+  font-size: 1.5rem; /* Larger flag size */
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttons-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  nav ul li {
+    min-width: 70px;
+  }
+
+  .lang-toggle {
+    min-width: 110px;
+  }
+}
+
+/* For even smaller devices */
+@media (max-width: 380px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+}
