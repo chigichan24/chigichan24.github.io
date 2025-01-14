@@ -5,7 +5,6 @@ export function MainContent() {
   
   return (
     <main>
-      <h2>{t("welcome")}</h2>
       <p>{t("main.content")}</p>
     </main>
   );
