@@ -18,18 +18,18 @@ const translations: Translations = {
   en: {
     "home": "Home",
     "about": "About",
-    "contact": "Contact",
+    "link": "Link",
     "welcome": "Welcome to My Application",
-    "main.content": "This is the main content area.",
-    "header.title": "Kazuki Chigita's Portfolio"
+    "header.title": "Kazuki Chigita",
+    "main.content": "Hello, I'm Kazuki Chigita(a.k.a. chigichan24). I'm SWE based in Tokyo, Japan.",
   },
   ja: {
     "home": "Home",
     "about": "About",
-    "contact": "Contact",
+    "link": "Link",
     "welcome": "アプリケーションへようこそ",
-    "main.content": "これはメインコンテンツエリアです。",
-    "header.title": "chigichan24のポートフォリオ"
+    "header.title": "Kazuki Chigita",
+    "main.content": "こんにちは、Kazuki Chigita(chigichan24)です。モバイルアプリエンジニアとして東京で働いています。",
   }
 };
 
