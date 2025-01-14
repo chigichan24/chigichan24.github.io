@@ -2,23 +2,25 @@ import { useState, useEffect } from "react";
 import "./Header.css";
 
 export function Header() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Initialize from localStorage or system preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      return savedTheme === "dark";
+    }
+    // Check system preference as fallback
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
 
   useEffect(() => {
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDark(true);
-    }
+    // Apply theme immediately when component mounts
+    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
   }, []);
 
   useEffect(() => {
-    // Save theme preference
+    // Update theme when isDark changes
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    document.documentElement.setAttribute(
-      "data-theme",
-      isDark ? "dark" : "light",
-    );
+    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);
 
   return (
