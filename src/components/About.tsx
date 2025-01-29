@@ -12,6 +12,27 @@ export function About() {
       </section>
 
       <section className="about-section">
+        <h3>{t("about.education")}</h3>
+        <ul className="education-list">
+        <li className="education-item">
+            <div className="education-title">{t("about.education.advanced-univ.name")}</div>
+            <div className="education-detail">{t("about.education.advanced-univ.department")}</div>
+            <div className="education-detail">{t("about.education.advanced-univ.degree")}</div>
+          </li>
+          <li className="education-item">
+            <div className="education-title">{t("about.education.univ.name")}</div>
+            <div className="education-detail">{t("about.education.univ.department")}</div>
+            <div className="education-detail">{t("about.education.univ.degree")}</div>
+          </li>
+          <li className="education-item">
+            <div className="education-title">{t("about.education.high.name")}</div>
+            <div className="education-detail">{t("about.education.high.department")}</div>
+            <div className="education-detail">{t("about.education.high.type")}</div>
+          </li>
+        </ul>
+      </section>
+
+      <section className="about-section">
         <h3>{t("about.experience")}</h3>
         <ul>
           <li>{t("about.experience.current")}</li>
@@ -23,7 +44,6 @@ export function About() {
         <ul>
           <li>{t("about.skills.mobile")}</li>
           <li>{t("about.skills.web")}</li>
-          <li>{t("about.skills.other")}</li>
         </ul>
       </section>
     </main>
