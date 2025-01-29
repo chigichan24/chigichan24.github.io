@@ -30,7 +30,7 @@ const translations: Translations = {
     "about.skills.mobile": "Mobile: Android (Kotlin), iOS (Swift), Flutter",
     "about.skills.web": "Web: React, TypeScript, Golang",
     "about.education": "Education",
-    "about.education.advanced-univ.name": "Advanced University of Tsukuba (2019-2021)",
+    "about.education.advanced-univ.name": "University of Tsukuba (2019-2021)",
     "about.education.advanced-univ.department": "School of systems and information engieering, department of computer science",
     "about.education.advanced-univ.degree": "Master's Degree",
     "about.education.univ.name": "University of Tsukuba (2017-2019)",
