@@ -1,14 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from "./components/Header";
-import { LanguageProvider } from "./contexts/LanguageContext";
 import { MainContent } from "./components/MainContent";
+import { About } from "./components/About";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 function App() {
   return (
     <LanguageProvider>
-      <>
+      <Router>
         <Header />
-        <MainContent />
-      </>
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </LanguageProvider>
   );
 }
