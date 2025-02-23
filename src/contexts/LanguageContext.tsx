@@ -26,7 +26,10 @@ const translations: Translations = {
     "about.experience": "Work Experience",
     "about.skills": "Skills",
     "about.description": "I'm a Software Engineer specializing in mobile app development. Currently working on Android applications. I'm interested in fundamental engineering and optimization for Android. I have basic knowledge of image processing.",
-    "about.experience.current": "Android App Engineer at LY Corp(ex-LINE Corp). (2021-Present)",
+    "about.experience.current.company": "LY Corporation (ex-LINE Corporation)",
+    "about.experience.current.position": "Android App Engineer",
+    "about.experience.current.period": "2021-Present",
+    "about.experience.current.description": "Working on Android application development, focusing on performance optimization, refactoring, talk feature implementation",
     "about.skills.mobile": "Mobile: Android (Kotlin), iOS (Swift), Flutter",
     "about.skills.web": "Web: Kotlin, React",
     "about.skills.general": "Others: Performaance improvement, Refactoring, E2EE implementation",
@@ -39,7 +42,8 @@ const translations: Translations = {
     "about.education.univ.degree": "Bachelor's Degree",
     "about.education.high.name": "National Institute of Technology, Kurume College (2012-2017)",
     "about.education.high.department": "Control and Information Engineering",
-    "about.education.high.type": "Associate's Degree"
+    "about.education.high.type": "Associate's Degree",
+    "about.presentation": "Presentation"
   },
   ja: {
     "home": "Home",
@@ -52,7 +56,10 @@ const translations: Translations = {
     "about.experience": "経歴",
     "about.skills": "スキル",
     "about.description": "モバイルアプリ開発を専門とするソフトウェアエンジニアです。現在はAndroidアプリの開発に携わっています。より基盤に近いエンジニアリングや、Android特有の最適化に興味があります。画像処理についても基礎的な知識を持っています。",
-    "about.experience.current": "LINEヤフー株式会社(旧 LINE株式会社) Android App Engineer (2021-現在)",
+    "about.experience.current.company": "LINEヤフー株式会社 (旧LINE株式会社)",
+    "about.experience.current.position": "Androidアプリ開発者",
+    "about.experience.current.period": "2021-現在",
+    "about.experience.current.description": "アプリパフォーマンス改善、リファクタリング、トーク関連機能の実装",
     "about.skills.mobile": "モバイル: Android (Kotlin), iOS (Swift)",
     "about.skills.web": "Web: Kotlin, React",
     "about.skills.general": "Others: パフォーマンス向上、リファクタリング、E2EE",
@@ -66,6 +73,7 @@ const translations: Translations = {
     "about.education.high.name": "久留米工業高等専門学校 (2012-2017)",
     "about.education.high.department": "制御情報工学科",
     "about.education.high.type": "準学士",
+    "about.presentation": "プレゼンテーション"
   }
 };
 
