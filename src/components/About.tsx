@@ -44,6 +44,7 @@ export function About() {
         <ul>
           <li>{t("about.skills.mobile")}</li>
           <li>{t("about.skills.web")}</li>
+          <li>{t("about.skills.general")}</li>
         </ul>
       </section>
     </main>
