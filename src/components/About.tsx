@@ -1,5 +1,6 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import "./About.css";
+import { Presentations } from "./Presentation";
 
 export function About() {
   const { t } = useLanguage();
@@ -56,7 +57,8 @@ export function About() {
       </section>
 
       <section className="about-section">
-      <h3>{t("about.presentation")}</h3>
+        <h3>{t("about.presentation")}</h3>
+        <Presentations />
       </section>
     </main>
   );

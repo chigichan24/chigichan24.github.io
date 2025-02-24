@@ -43,7 +43,10 @@ const translations: Translations = {
     "about.education.high.name": "National Institute of Technology, Kurume College (2012-2017)",
     "about.education.high.department": "Control and Information Engineering",
     "about.education.high.type": "Associate's Degree",
-    "about.presentation": "Presentation"
+    "about.presentation": "Presentation",
+    "about.presentation.flutterkaigi2024.title": "FlutterKaigi 2024: Obfuscation on Flutter Apps",
+    "about.presentation.flutterkaigi2024.speakerdeck": "https://speakerdeck.com/chigichan24/fluttertonan-du-hua",
+    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY"
   },
   ja: {
     "home": "Home",
@@ -73,7 +76,10 @@ const translations: Translations = {
     "about.education.high.name": "久留米工業高等専門学校 (2012-2017)",
     "about.education.high.department": "制御情報工学科",
     "about.education.high.type": "準学士",
-    "about.presentation": "プレゼンテーション"
+    "about.presentation": "プレゼンテーション",
+    "about.presentation.flutterkaigi2024.title": "FlutterKaigi 2024: Flutterと難読化",
+    "about.presentation.flutterkaigi2024.speakerdeck": "https://speakerdeck.com/chigichan24/fluttertonan-du-hua",
+    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY"
   }
 };
 
