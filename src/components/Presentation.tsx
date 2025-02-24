@@ -35,10 +35,20 @@ export function Presentations() {
   return (
     <div className="presentations-grid">
       <PresentationItem
+        imageUrl="/presentations/androidtestnight2024.jpg"
+        titleKey="about.presentation.androidtestnight2024.title"
+        contentUrlKey="about.presentation.androidtestnight2024.speakerdeck"
+      />
+      <PresentationItem
         imageUrl="/presentations/flutterkaigi2024.jpg"
         titleKey="about.presentation.flutterkaigi2024.title"
         contentUrlKey="about.presentation.flutterkaigi2024.speakerdeck"
         youtubeUrlKey="about.presentation.flutterkaigi2024.youtube"
+      />
+      <PresentationItem
+        imageUrl="/presentations/documentsprovider2024.jpg"
+        titleKey="about.presentation.documentsprovider2024.title"
+        contentUrlKey="about.presentation.documentsprovider2024.speakerdeck"
       />
     </div>
   );

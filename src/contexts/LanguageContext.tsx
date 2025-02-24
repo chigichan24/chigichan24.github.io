@@ -46,7 +46,11 @@ const translations: Translations = {
     "about.presentation": "Presentation",
     "about.presentation.flutterkaigi2024.title": "FlutterKaigi 2024: Obfuscation on Flutter Apps",
     "about.presentation.flutterkaigi2024.speakerdeck": "https://speakerdeck.com/chigichan24/fluttertonan-du-hua",
-    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY"
+    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY",
+    "about.presentation.androidtestnight2024.title": "Android Test Night #10: Problem Investigation with Tests",
+    "about.presentation.androidtestnight2024.speakerdeck": "https://speakerdeck.com/chigichan24/problem-investigation-with-tests",
+    "about.presentation.documentsprovider2024.title": "Blog: Secure DocumentsProvider Implementation",
+    "about.presentation.documentsprovider2024.speakerdeck": "https://techblog.lycorp.co.jp/ja/20240828a",
   },
   ja: {
     "home": "Home",
@@ -79,7 +83,11 @@ const translations: Translations = {
     "about.presentation": "プレゼンテーション",
     "about.presentation.flutterkaigi2024.title": "FlutterKaigi 2024: Flutterと難読化",
     "about.presentation.flutterkaigi2024.speakerdeck": "https://speakerdeck.com/chigichan24/fluttertonan-du-hua",
-    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY"
+    "about.presentation.flutterkaigi2024.youtube": "https://www.youtube.com/watch?v=x2jMRJe_bSY",
+    "about.presentation.androidtestnight2024.title": "Android Test Night #10: 不具合調査とTest",
+    "about.presentation.androidtestnight2024.speakerdeck": "https://speakerdeck.com/chigichan24/problem-investigation-with-tests",
+    "about.presentation.documentsprovider2024.title": "Blog: DocumentsProviderによるデータアクセスをよりセキュアにする工夫",
+    "about.presentation.documentsprovider2024.speakerdeck": "https://techblog.lycorp.co.jp/ja/20240828a",
   }
 };
 
