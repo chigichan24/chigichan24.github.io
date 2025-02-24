@@ -54,7 +54,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  max-width: 800px;
+  width: min(800px, 80vw);
   padding: 3rem;
   background: rgba(var(--header-bg-rgb), 0.9);
   backdrop-filter: blur(20px);
@@ -65,7 +65,12 @@
     0 4px 8px rgba(0,0,0,0.07), 
     0 8px 16px rgba(0,0,0,0.07),
     0 16px 32px rgba(0,0,0,0.07);
-  animation: elevationPulse 4s ease-in-out infinite;
+  --start-x: 0;
+  --start-y: 0;
+  --dir-x: 1;
+  --dir-y: 1;
+  animation: dvdBounce 10s linear infinite;
+  will-change: transform;
 }
 
 .title {
@@ -118,6 +123,45 @@
   }
 }
 
+@keyframes dvdBounce {
+  0% {
+    transform: translate(
+      calc(var(--start-x) * (100vw - 100%) / 2),
+      calc(var(--start-y) * (100vh - 100%) / 2)
+    );
+  }
+  20% {
+    transform: translate(
+      calc(var(--dir-x) * (100vw - 100%) / 2),
+      calc(var(--dir-y) * (100vh - 100%) / 2)
+    );
+  }
+  40% {
+    transform: translate(
+      calc(var(--dir-x) * (100vw - 100%) / 2),
+      calc(var(--start-y) * (100vh - 100%) / 2)
+    );
+  }
+  60% {
+    transform: translate(
+      calc(var(--start-x) * (100vw - 100%) / 2),
+      calc(var(--dir-y) * (100vh - 100%) / 2)
+    );
+  }
+  80% {
+    transform: translate(
+      calc(-1 * var(--dir-x) * (100vw - 100%) / 2),
+      calc(-1 * var(--dir-y) * (100vh - 100%) / 2)
+    );
+  }
+  100% {
+    transform: translate(
+      calc(var(--start-x) * (100vw - 100%) / 2),
+      calc(var(--start-y) * (100vh - 100%) / 2)
+    );
+  }
+}
+
 @keyframes titleGlow {
   0%, 100% {
     filter: drop-shadow(0 0 2px var(--neon-color));
@@ -141,6 +185,7 @@
 @media (max-width: 768px) {
   .content-wrapper {
     padding: 2rem;
+    width: min(90vw, 400px);
   }
   
   .title {
