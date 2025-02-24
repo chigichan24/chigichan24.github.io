@@ -1,6 +1,6 @@
 .link-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: calc(var(--header-height) + 2rem) auto 0;
   padding: 2rem;
 }
 
