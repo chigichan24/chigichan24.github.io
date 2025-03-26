@@ -52,6 +52,11 @@ export function Presentations() {
       contentUrlKey: "about.presentation.documentsprovider2024.speakerdeck"
     },
     {
+      imageUrl: "/presentations/predictiveback2023.jpg",
+      titleKey: "about.presentation.predictiveback2023.title",
+      contentUrlKey: "about.presentation.predictiveback2023.speakerdeck"
+    },
+    {
       imageUrl: "/presentations/droidkaigi2022.jpg",
       titleKey: "about.presentation.droidkaigi2022.title",
       contentUrlKey: "about.presentation.droidkaigi2022.speakerdeck",
