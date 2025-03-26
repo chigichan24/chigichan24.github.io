@@ -32,6 +32,14 @@ export function Link() {
         >
           <span>LinkedIn</span>
         </a>
+        <a 
+          href="https://www.semanticscholar.org/author/Kazuki-Chigita/46176861" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="link-item"
+        >
+          <span>Semantic Scholar</span>
+        </a>
       </div>
     </main>
   );
