@@ -32,24 +32,60 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 }
 
 export function Presentations() {
+  const { t } = useLanguage();
+  
+  const presentations = [
+    {
+      imageUrl: "/presentations/flutterkaigi2024.jpg",
+      titleKey: "about.presentation.flutterkaigi2024.title",
+      contentUrlKey: "about.presentation.flutterkaigi2024.speakerdeck",
+      youtubeUrlKey: "about.presentation.flutterkaigi2024.youtube"
+    },
+    {
+      imageUrl: "/presentations/androidtestnight2024.jpg",
+      titleKey: "about.presentation.androidtestnight2024.title",
+      contentUrlKey: "about.presentation.androidtestnight2024.speakerdeck"
+    },
+    {
+      imageUrl: "/presentations/documentsprovider2024.jpg",
+      titleKey: "about.presentation.documentsprovider2024.title",
+      contentUrlKey: "about.presentation.documentsprovider2024.speakerdeck"
+    },
+    {
+      imageUrl: "/presentations/predictiveback2023.jpg",
+      titleKey: "about.presentation.predictiveback2023.title",
+      contentUrlKey: "about.presentation.predictiveback2023.speakerdeck"
+    },
+    {
+      imageUrl: "/presentations/droidkaigi2022.jpg",
+      titleKey: "about.presentation.droidkaigi2022.title",
+      contentUrlKey: "about.presentation.droidkaigi2022.speakerdeck",
+      youtubeUrlKey: "about.presentation.droidkaigi2022.youtube"
+    },
+    {
+      imageUrl: "/presentations/droidkaigi2021.jpg",
+      titleKey: "about.presentation.droidkaigi2021.title",
+      contentUrlKey: "about.presentation.droidkaigi2021.speakerdeck",
+      youtubeUrlKey: "about.presentation.droidkaigi2021.youtube"
+    },
+    {
+      imageUrl: "/presentations/droidkaigi2020.jpg",
+      titleKey: "about.presentation.droidkaigi2020.title",
+      contentUrlKey: "about.presentation.droidkaigi2020.speakerdeck"
+    }
+  ];
+
   return (
     <div className="presentations-grid">
-      <PresentationItem
-        imageUrl="/presentations/androidtestnight2024.jpg"
-        titleKey="about.presentation.androidtestnight2024.title"
-        contentUrlKey="about.presentation.androidtestnight2024.speakerdeck"
-      />
-      <PresentationItem
-        imageUrl="/presentations/flutterkaigi2024.jpg"
-        titleKey="about.presentation.flutterkaigi2024.title"
-        contentUrlKey="about.presentation.flutterkaigi2024.speakerdeck"
-        youtubeUrlKey="about.presentation.flutterkaigi2024.youtube"
-      />
-      <PresentationItem
-        imageUrl="/presentations/documentsprovider2024.jpg"
-        titleKey="about.presentation.documentsprovider2024.title"
-        contentUrlKey="about.presentation.documentsprovider2024.speakerdeck"
-      />
+      {presentations.map((presentation, index) => (
+        <PresentationItem
+          key={index}
+          imageUrl={presentation.imageUrl}
+          titleKey={presentation.titleKey}
+          contentUrlKey={presentation.contentUrlKey}
+          youtubeUrlKey={presentation.youtubeUrlKey}
+        />
+      ))}
     </div>
   );
 } 

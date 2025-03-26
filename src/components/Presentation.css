@@ -3,6 +3,9 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 1rem;
+  width: 70vw;
+  margin-left: calc((100% - 70vw) / 2);
+  padding: 0 2rem;
 }
 
 .presentation-item {
@@ -11,6 +14,7 @@
   overflow: hidden;
   background: var(--body-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .presentation-image-container {
@@ -75,7 +79,6 @@
 
 @media (max-width: 768px) {
   .presentations-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    padding: 0 1rem;
   }
 } 
