@@ -5,6 +5,23 @@ import { Presentations } from "./Presentation";
 export function About() {
   const { t } = useLanguage();
   
+  const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height'));
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      window.history.pushState({}, '', `/#/about#${id}`);
+    }
+  };
+  
   return (
     <main className="about-container">
       <section className="about-section">
@@ -12,8 +29,16 @@ export function About() {
         <p>{t("about.description")}</p>
       </section>
 
-      <section className="about-section">
-        <h3>{t("about.experience")}</h3>
+      <section className="about-section" id="about-experience">
+        <h3>
+          <a 
+            href="/#/about#about-experience" 
+            className="section-link"
+            onClick={(e) => scrollToSection(e, 'about-experience')}
+          >
+            {t("about.experience")}
+          </a>
+        </h3>
         <ul className="experience-list">
           <li className="experience-item">
             <div className="experience-title">{t("about.experience.current.company")}</div>
@@ -26,8 +51,16 @@ export function About() {
         </ul>
       </section>
 
-      <section className="about-section">
-        <h3>{t("about.education")}</h3>
+      <section className="about-section" id="about-education">
+        <h3>
+          <a 
+            href="/#/about#about-education" 
+            className="section-link"
+            onClick={(e) => scrollToSection(e, 'about-education')}
+          >
+            {t("about.education")}
+          </a>
+        </h3>
         <ul className="education-list">
         <li className="education-item">
             <div className="education-title">{t("about.education.advanced-univ.name")}</div>
@@ -47,8 +80,16 @@ export function About() {
         </ul>
       </section>
 
-      <section className="about-section">
-        <h3>{t("about.skills")}</h3>
+      <section className="about-section" id="about-skills">
+        <h3>
+          <a 
+            href="/#/about#about-skills" 
+            className="section-link"
+            onClick={(e) => scrollToSection(e, 'about-skills')}
+          >
+            {t("about.skills")}
+          </a>
+        </h3>
         <ul>
           <li>{t("about.skills.mobile")}</li>
           <li>{t("about.skills.web")}</li>
@@ -56,8 +97,16 @@ export function About() {
         </ul>
       </section>
 
-      <section className="about-section">
-        <h3>{t("about.presentation")}</h3>
+      <section className="about-section" id="about-presentation">
+        <h3>
+          <a 
+            href="/#/about#about-presentation" 
+            className="section-link"
+            onClick={(e) => scrollToSection(e, 'about-presentation')}
+          >
+            {t("about.presentation")}
+          </a>
+        </h3>
         <Presentations />
       </section>
     </main>
