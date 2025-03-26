@@ -32,8 +32,6 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 }
 
 export function Presentations() {
-  const { t } = useLanguage();
-  
   const presentations = [
     {
       imageUrl: "/presentations/flutterkaigi2024.jpg",
