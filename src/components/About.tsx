@@ -29,24 +29,24 @@ export function About() {
         <p>{t("about.description")}</p>
       </section>
 
-      <section className="about-section" id="about-experience">
+      <section className="about-section" id="about-work-experience">
         <h3>
           <a 
-            href="/#/about#about-experience" 
+            href="/#/about#about-work-experience" 
             className="section-link"
-            onClick={(e) => scrollToSection(e, 'about-experience')}
+            onClick={(e) => scrollToSection(e, 'about-work-experience')}
           >
-            {t("about.experience")}
+            {t("about.work_experience")}
           </a>
         </h3>
         <ul className="experience-list">
           <li className="experience-item">
-            <div className="experience-title">{t("about.experience.current.company")}</div>
+            <div className="experience-title">{t("about.work_experience.current.company")}</div>
             <div className="experience-detail">
-              <span className="position">{t("about.experience.current.position")}</span>
-              <span className="period">{t("about.experience.current.period")}</span>
+              <span className="position">{t("about.work_experience.current.position")}</span>
+              <span className="period">{t("about.work_experience.current.period")}</span>
             </div>
-            <div className="experience-description">{t("about.experience.current.description")}</div>
+            <div className="experience-description">{t("about.work_experience.current.description")}</div>
           </li>
         </ul>
       </section>
