@@ -51,7 +51,15 @@ const translations: Translations = {
     "about.presentation.androidtestnight2024.speakerdeck": "https://speakerdeck.com/chigichan24/problem-investigation-with-tests",
     "about.presentation.documentsprovider2024.title": "Blog: Secure DocumentsProvider Implementation",
     "about.presentation.documentsprovider2024.speakerdeck": "https://techblog.lycorp.co.jp/ja/20240828a",
-    "link.title": "Links",
+    "about.presentation.droidkaigi2020.title": "DroidKaigi 2020: A continuous process of modularization with feature development",
+    "about.presentation.droidkaigi2020.speakerdeck": "https://speakerdeck.com/chigichan24/ji-sok-de-niji-neng-kai-fa-wojin-menagaraxing-umarutimoziyuruhua",
+    "about.presentation.droidkaigi2021.title": "DroidKaigi 2021: A look into the past, present, and future of app architecture though the DroidKaigi conference app",
+    "about.presentation.droidkaigi2021.speakerdeck": "https://speakerdeck.com/chigichan24/droidkaigikanhuarensuapurifalseli-shi-karamiruapuriakitekutiyafalsekoremadetokorekara",
+    "about.presentation.droidkaigi2021.youtube": "https://www.youtube.com/watch?v=R07FSMhZAW8",
+    "about.presentation.droidkaigi2022.title": "DroidKaigi 2022: Building Android and looking into the Android System",
+    "about.presentation.droidkaigi2022.speakerdeck": "https://speakerdeck.com/chigichan24/building-android-and-looking-into-the-android-system",
+    "about.presentation.droidkaigi2022.youtube": "https://www.youtube.com/watch?v=ZJ2Zkhb7LD4",
+    "link.title": "Links"
   },
   ja: {
     "home": "Home",
@@ -89,7 +97,15 @@ const translations: Translations = {
     "about.presentation.androidtestnight2024.speakerdeck": "https://speakerdeck.com/chigichan24/problem-investigation-with-tests",
     "about.presentation.documentsprovider2024.title": "Blog: DocumentsProviderによるデータアクセスをよりセキュアにする工夫",
     "about.presentation.documentsprovider2024.speakerdeck": "https://techblog.lycorp.co.jp/ja/20240828a",
-    "link.title": "リンク",
+    "about.presentation.droidkaigi2020.title": "DroidKaigi 2020: 継続的に機能開発を進めながら行うマルチモジュール化",
+    "about.presentation.droidkaigi2021.title": "DroidKaigi 2021: DroidKaigiカンファレンスアプリの歴史からみるアプリアーキテクチャのこれまでとこれから",
+    "about.presentation.droidkaigi2022.title": "DroidKaigi 2022: Android \"を\" ビルドしてAndroid Systemを覗いてみよう",
+    "about.presentation.droidkaigi2020.speakerdeck": "https://speakerdeck.com/chigichan24/ji-sok-de-niji-neng-kai-fa-wojin-menagaraxing-umarutimoziyuruhua",
+    "about.presentation.droidkaigi2021.speakerdeck": "https://speakerdeck.com/chigichan24/droidkaigikanhuarensuapurifalseli-shi-karamiruapuriakitekutiyafalsekoremadetokorekara",
+    "about.presentation.droidkaigi2021.youtube": "https://www.youtube.com/watch?v=R07FSMhZAW8",
+    "about.presentation.droidkaigi2022.speakerdeck": "https://speakerdeck.com/chigichan24/building-android-and-looking-into-the-android-system",
+    "about.presentation.droidkaigi2022.youtube": "https://www.youtube.com/watch?v=ZJ2Zkhb7LD4",
+    "link.title": "リンク"
   }
 };
 
