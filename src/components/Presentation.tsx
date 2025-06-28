@@ -34,15 +34,20 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 export function Presentations() {
   const presentations = [
     {
-      imageUrl: "/presentations/flutterkaigi2024.jpg",
-      titleKey: "about.presentation.flutterkaigi2024.title",
-      contentUrlKey: "about.presentation.flutterkaigi2024.speakerdeck",
-      youtubeUrlKey: "about.presentation.flutterkaigi2024.youtube"
+      imageUrl: "/presentations/androidtestnight2024.jpg",
+      titleKey: "about.presentation.droidkaigi_collect_20.title",
+      contentUrlKey: "about.presentation.droidkaigi_collect_20.speakerdeck"
     },
     {
       imageUrl: "/presentations/androidtestnight2024.jpg",
       titleKey: "about.presentation.androidtestnight2024.title",
       contentUrlKey: "about.presentation.androidtestnight2024.speakerdeck"
+    },
+    {
+      imageUrl: "/presentations/flutterkaigi2024.jpg",
+      titleKey: "about.presentation.flutterkaigi2024.title",
+      contentUrlKey: "about.presentation.flutterkaigi2024.speakerdeck",
+      youtubeUrlKey: "about.presentation.flutterkaigi2024.youtube"
     },
     {
       imageUrl: "/presentations/documentsprovider2024.jpg",
