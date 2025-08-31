@@ -41,6 +41,14 @@ export function About() {
         </h3>
         <ul className="experience-list">
           <li className="experience-item">
+            <div className="experience-title">{t("about.work_experience.mixi.company")}</div>
+            <div className="experience-detail">
+              <span className="position">{t("about.work_experience.mixi.position")}</span>
+              <span className="period">{t("about.work_experience.mixi.period")}</span>
+            </div>
+            <div className="experience-description">{t("about.work_experience.mixi.description")}</div>
+          </li>
+          <li className="experience-item">
             <div className="experience-title">{t("about.work_experience.line.company")}</div>
             <div className="experience-detail">
               <span className="position">{t("about.work_experience.line.position")}</span>
