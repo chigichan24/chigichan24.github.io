@@ -41,7 +41,8 @@ export function Presentations() {
     {
       imageUrl: "/presentations/ai_agent_test.jpg",
       titleKey: "about.presentation.ai_agent_test.title",
-      contentUrlKey: "about.presentation.ai_agent_test.speakerdeck"
+      contentUrlKey: "about.presentation.ai_agent_test.speakerdeck",
+      youtubeUrlKey: "about.presentation.ai_agent_test.youtube"
     },
     {
       imageUrl: "/presentations/droidkaigicollect_20.jpg",
