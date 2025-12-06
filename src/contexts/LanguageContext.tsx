@@ -33,7 +33,7 @@ const translations: Translations = {
     "about.work_experience.mixi.company": "MIXI, Inc.",
     "about.work_experience.mixi.position": "Software Engineer",
     "about.work_experience.mixi.period": "2025-Present",
-    "about.work_experience.mixi.description": "Focusing on FamilyAlbum app development. I'm working to revamp our revenue structure while minimizing user disruption as much as possible, and am also actively working on improvements, including a comprehensive refactoring of the Android project.",
+    "about.work_experience.mixi.description": "Focusing on Family Album app development. I am actively working on improvements, including a complete refactoring of the Android project, while modernizing it from various perspectives to eliminate any outdated aspects that users may potentially perceive.",
     "about.skills.mobile": "Mobile: Android (Kotlin), iOS (Swift), Flutter",
     "about.skills.web": "Web: Kotlin, React, Ruby on Rails",
     "about.skills.general": "Others: Performaance improvement, Refactoring, E2EE implementation",
