@@ -34,7 +34,7 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 export function Presentations() {
   const presentations = [
     {
-      imageUrl: "/presentations/upgrade_kotlin.png",
+      imageUrl: "/presentations/upgrade_kotlin.jpg",
       titleKey: "about.presentation.kotlin_upgrade.title",
       contentUrlKey: "about.presentation.kotlin_upgrade.speakerdeck"
     },
