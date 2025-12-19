@@ -34,6 +34,11 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 export function Presentations() {
   const presentations = [
     {
+      imageUrl: "/presentations/upgrade_kotlin.png",
+      titleKey: "about.presentation.kotlin_upgrade.title",
+      contentUrlKey: "about.presentation.kotlin_upgrade.speakerdeck"
+    },
+    {
       imageUrl: "/presentations/flutterkaigi2025.jpg",
       titleKey: "about.presentation.flutterkaigi2025.title",
       contentUrlKey: "about.presentation.flutterkaigi2025.speakerdeck",
