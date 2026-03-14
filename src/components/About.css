@@ -11,13 +11,13 @@
 .about-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--body-text);
+  color: var(--on-surface);
 }
 
 .about-section h3 {
   font-size: 1.5rem;
   margin: 1.5rem 0 1rem;
-  color: var(--body-text);
+  color: var(--on-surface);
 }
 
 .about-section p {
@@ -50,8 +50,7 @@
 }
 
 .education-detail {
-  color: var(--body-text);
-  opacity: 0.9;
+  color: var(--on-surface-variant);
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
 }
@@ -74,19 +73,17 @@
 .experience-detail {
   display: flex;
   gap: 1rem;
-  color: var(--body-text);
-  opacity: 0.9;
+  color: var(--on-surface-variant);
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
 
 .experience-detail .period {
-  color: var(--body-text);
-  opacity: 0.7;
+  color: var(--on-surface-muted);
 }
 
 .experience-description {
-  color: var(--body-text);
+  color: var(--on-surface);
   font-size: 0.95rem;
   line-height: 1.5;
 }
