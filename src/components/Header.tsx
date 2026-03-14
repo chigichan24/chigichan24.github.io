@@ -28,13 +28,10 @@ export function Header() {
 
   return (
     <header>
-      <h1>{t("header.title")}</h1>
+      <h1><a href="/" className="header-title-link">{t("header.title")}</a></h1>
       <div className="header-right">
         <nav>
           <ul>
-            <li>
-              <a href="/">{t("home")}</a>
-            </li>
             <li>
               <a href="/#/about">{t("about")}</a>
             </li>
