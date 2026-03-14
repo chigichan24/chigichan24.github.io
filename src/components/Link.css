@@ -7,7 +7,7 @@
 .link-container h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: var(--body-text);
+  color: var(--on-surface);
 }
 
 .links-grid {
@@ -20,10 +20,11 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: var(--header-bg);
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
   border-radius: 8px;
   text-decoration: none;
-  color: var(--header-text);
+  color: var(--on-surface);
   transition: transform 0.2s ease;
 }
 

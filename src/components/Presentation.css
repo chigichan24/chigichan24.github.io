@@ -12,8 +12,9 @@
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  background: var(--body-bg);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--surface-container);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  border: 1px solid var(--outline-variant);
   height: 100%;
 }
 
@@ -36,7 +37,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--overlay-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--surface-on-overlay);
   border-radius: 50%;
   transition: transform 0.2s ease;
 }
@@ -73,8 +74,8 @@
   padding: 1rem;
   margin: 0;
   font-size: 1rem;
-  color: var(--body-text);
-  background: var(--body-bg);
+  color: var(--on-surface);
+  background: var(--surface-container);
 }
 
 @media (max-width: 768px) {
