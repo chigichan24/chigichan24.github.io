@@ -8,20 +8,51 @@ export function MainContent() {
   
   useEffect(() => {
     const wrapper = wrapperRef.current;
-    if (!wrapper) return;
+    const container = wrapper?.parentElement;
+    if (!wrapper || !container) return;
 
-    // Random starting position between -1 and 1
-    const startX = Math.random() * 2 - 1;
-    const startY = Math.random() * 2 - 1;
-    
-    // Random direction (1 or -1) for each axis
-    const dirX = Math.random() < 0.5 ? -1 : 1;
-    const dirY = Math.random() < 0.5 ? -1 : 1;
-    
-    wrapper.style.setProperty('--start-x', startX.toString());
-    wrapper.style.setProperty('--start-y', startY.toString());
-    wrapper.style.setProperty('--dir-x', dirX.toString());
-    wrapper.style.setProperty('--dir-y', dirY.toString());
+    const speed = 2;
+    let vx = (Math.random() < 0.5 ? -1 : 1) * speed;
+    let vy = (Math.random() < 0.5 ? -1 : 1) * speed;
+
+    const containerRect = container.getBoundingClientRect();
+    const wrapperRect = wrapper.getBoundingClientRect();
+    let x = Math.random() * (containerRect.width - wrapperRect.width);
+    let y = Math.random() * (containerRect.height - wrapperRect.height);
+
+    let animationId: number;
+
+    const animate = () => {
+      const cw = container.clientWidth;
+      const ch = container.clientHeight;
+      const ww = wrapper.offsetWidth;
+      const wh = wrapper.offsetHeight;
+
+      x += vx;
+      y += vy;
+
+      if (x <= 0) {
+        x = 0;
+        vx = Math.abs(vx);
+      } else if (x + ww >= cw) {
+        x = cw - ww;
+        vx = -Math.abs(vx);
+      }
+
+      if (y <= 0) {
+        y = 0;
+        vy = Math.abs(vy);
+      } else if (y + wh >= ch) {
+        y = ch - wh;
+        vy = -Math.abs(vy);
+      }
+
+      wrapper.style.transform = `translate(${x}px, ${y}px)`;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationId);
   }, []);
   
   return (
