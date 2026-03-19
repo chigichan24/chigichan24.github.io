@@ -49,7 +49,7 @@ const translations: Translations = {
     "about.education.high.type": "Associate's Degree",
     "about.presentation": "Presentations & Blogs",
     "about.presentation.crune2026.title": "Blog: Finding Hidden Skills from Claude Code Behavior",
-    "about.presentation.crune2026.url": "https://zenn.dev/chigichan24/articles/eed4a60d102997",
+    "about.presentation.crune2026.url": "https://dev.to/chigichan24/mining-hidden-skills-from-claude-code-session-logs-with-semantic-knowledge-graphs-2em8",
     "about.presentation.duff2026.title": "Blog: I built a browser-only Git diff viewer using File System Access API — no server needed",
     "about.presentation.duff2026.url": "https://dev.to/chigichan24/i-built-a-browser-only-git-diff-viewer-using-file-system-access-api-no-server-needed-282g",
     "about.presentation.kotlin_upgrade.title": "Blog: How to migrate to Kotlin 2.1.21",
