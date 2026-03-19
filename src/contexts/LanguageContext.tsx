@@ -48,7 +48,7 @@ const translations: Translations = {
     "about.education.high.department": "Control and Information Engineering",
     "about.education.high.type": "Associate's Degree",
     "about.presentation": "Presentations & Blogs",
-    "about.presentation.crune2026.title": "Blog: Finding Hidden Skills from Claude Code Behavior",
+    "about.presentation.crune2026.title": "Blog: Mining Hidden Skills from Claude Code Session Logs with Semantic Knowledge Graphs",
     "about.presentation.crune2026.url": "https://dev.to/chigichan24/mining-hidden-skills-from-claude-code-session-logs-with-semantic-knowledge-graphs-2em8",
     "about.presentation.duff2026.title": "Blog: I built a browser-only Git diff viewer using File System Access API — no server needed",
     "about.presentation.duff2026.url": "https://dev.to/chigichan24/i-built-a-browser-only-git-diff-viewer-using-file-system-access-api-no-server-needed-282g",
