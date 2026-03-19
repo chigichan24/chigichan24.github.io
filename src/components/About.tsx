@@ -69,21 +69,30 @@ export function About() {
             {t("about.education")}
           </a>
         </h3>
-        <ul className="education-list">
-        <li className="education-item">
-            <div className="education-title">{t("about.education.advanced-univ.name")}</div>
-            <div className="education-detail">{t("about.education.advanced-univ.department")}</div>
-            <div className="education-detail">{t("about.education.advanced-univ.degree")}</div>
+        <ul className="experience-list">
+          <li className="experience-item">
+            <div className="experience-title">{t("about.education.advanced-univ.name")}</div>
+            <div className="experience-detail">
+              <span className="position">{t("about.education.advanced-univ.department")}</span>
+              <span className="period">{t("about.education.advanced-univ.period")}</span>
+            </div>
+            <div className="experience-description">{t("about.education.advanced-univ.degree")}</div>
           </li>
-          <li className="education-item">
-            <div className="education-title">{t("about.education.univ.name")}</div>
-            <div className="education-detail">{t("about.education.univ.department")}</div>
-            <div className="education-detail">{t("about.education.univ.degree")}</div>
+          <li className="experience-item">
+            <div className="experience-title">{t("about.education.univ.name")}</div>
+            <div className="experience-detail">
+              <span className="position">{t("about.education.univ.department")}</span>
+              <span className="period">{t("about.education.univ.period")}</span>
+            </div>
+            <div className="experience-description">{t("about.education.univ.degree")}</div>
           </li>
-          <li className="education-item">
-            <div className="education-title">{t("about.education.high.name")}</div>
-            <div className="education-detail">{t("about.education.high.department")}</div>
-            <div className="education-detail">{t("about.education.high.type")}</div>
+          <li className="experience-item">
+            <div className="experience-title">{t("about.education.high.name")}</div>
+            <div className="experience-detail">
+              <span className="position">{t("about.education.high.department")}</span>
+              <span className="period">{t("about.education.high.period")}</span>
+            </div>
+            <div className="experience-description">{t("about.education.high.degree")}</div>
           </li>
         </ul>
       </section>
