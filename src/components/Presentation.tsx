@@ -36,12 +36,12 @@ export function Presentations() {
     {
       imageUrl: "/presentations/androidtestnight2024.jpg",
       titleKey: "about.presentation.crune2026.title",
-      contentUrlKey: "about.presentation.crune2026.speakerdeck"
+      contentUrlKey: "about.presentation.crune2026.url"
     },
     {
       imageUrl: "/presentations/androidtestnight2024.jpg",
       titleKey: "about.presentation.duff2026.title",
-      contentUrlKey: "about.presentation.duff2026.speakerdeck"
+      contentUrlKey: "about.presentation.duff2026.url"
     },
     {
       imageUrl: "/presentations/upgrade_kotlin.jpg",
