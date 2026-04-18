@@ -34,6 +34,11 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 export function Presentations() {
   const presentations = [
     {
+      imageUrl: "/presentations/hatoko.png",
+      titleKey: "about.presentation.hatoko2026.title",
+      contentUrlKey: "about.presentation.hatoko2026.url"
+    },
+    {
       imageUrl: "/presentations/xpbc.jpg",
       titleKey: "about.presentation.xpbc2026.title",
       contentUrlKey: "about.presentation.xpbc2026.url"
