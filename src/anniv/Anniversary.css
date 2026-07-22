@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Zen+Maru+Gothic:wght@500;700&display=swap");
+
+:root {
+  --pink-bg1: #ffeef4;
+  --pink-bg2: #ffdcea;
+  --pink-bg3: #ffd0e2;
+  --accent: #ff8fb0;
+  --accent-deep: #f06d92;
+  --rose: #c0426b;
+  --text: #7a4a5a;
+  --text-soft: #ad8092;
+  --card: #ffffff;
+  --shadow: 24px 40px rgba(214, 122, 156, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+}
+
+.anniv {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 12%, #fff5f9 0%, transparent 45%),
+    radial-gradient(circle at 85% 88%, #ffe0ec 0%, transparent 50%),
+    linear-gradient(160deg, var(--pink-bg1) 0%, var(--pink-bg2) 55%, var(--pink-bg3) 100%);
+  background-attachment: fixed;
+}
+
+/* ===== 背景の浮かぶハート ===== */
+.bg-deco {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.bg-heart {
+  position: absolute;
+  bottom: -6vh;
+  color: rgba(255, 143, 176, 0.35);
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-115vh) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+/* ===== イントロ演出 ===== */
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 50% 45%, #fff6fa 0%, transparent 60%),
+    linear-gradient(160deg, var(--pink-bg1) 0%, var(--pink-bg2) 55%, var(--pink-bg3) 100%);
+  transition: opacity 0.7s ease;
+}
+.anniv[data-phase="gallery"] .intro-overlay {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.7s ease,
+    visibility 0s linear 0.7s;
+}
+
+.intro-stage {
+  position: relative;
+  width: min(90vw, 620px);
+  height: min(90vw, 620px);
+}
+
+.intro-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(22vw, 118px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%) translate(var(--x), var(--y)) rotate(var(--r));
+}
+.intro-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-origin: center bottom;
+  animation: stamp 0.55s cubic-bezier(0.2, 1.3, 0.35, 1) both;
+}
+.intro-card-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 22px rgba(200, 100, 140, 0.28);
+}
+@keyframes stamp {
+  0% {
+    opacity: 0;
+    transform: perspective(700px) rotateX(-85deg) scale(1.5);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(700px) rotateX(12deg) scale(0.93);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(700px) rotateX(0deg) scale(1);
+  }
+}
+
+.intro-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.intro-hero-inner {
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: heroBoom 0.9s cubic-bezier(0.18, 1.25, 0.4, 1) both;
+}
+.intro-hero-inner img {
+  width: min(58vw, 320px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 9px solid #fff;
+  box-shadow:
+    0 0 0 6px rgba(255, 143, 176, 0.35),
+    0 26px 60px rgba(220, 90, 140, 0.4);
+}
+.intro-hero-year {
+  position: absolute;
+  bottom: -18px;
+  padding: 6px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), var(--accent-deep));
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(220, 90, 140, 0.4);
+}
+@keyframes heroBoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.16);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.skip-btn {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  padding: 9px 20px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.9rem;
+  color: var(--rose);
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(200, 100, 140, 0.2);
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
+}
+.skip-btn:hover {
+  transform: translateY(-2px);
+  background: #fff;
+}
+
+/* ===== 本編ギャラリー ===== */
+.gallery {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 5rem) 1.25rem 4rem;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.25s;
+}
+.anniv[data-phase="intro"] .gallery {
+  pointer-events: none;
+}
+.anniv[data-phase="gallery"] .gallery {
+  opacity: 1;
+}
+
+.hero {
+  text-align: center;
+}
+.hero-eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  color: var(--accent-deep);
+  margin-bottom: 0.6rem;
+}
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 9vw, 4.6rem);
+  line-height: 1;
+  color: var(--rose);
+}
+.hero-th {
+  font-size: 0.5em;
+  vertical-align: super;
+  color: var(--accent-deep);
+}
+.hero-range {
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--text-soft);
+}
+
+.hero-figure {
+  position: relative;
+  display: inline-block;
+  margin: clamp(1.6rem, 5vw, 2.6rem) 0 0.5rem;
+}
+.hero-figure img {
+  width: min(64vw, 300px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 36px;
+  border: 8px solid #fff;
+  box-shadow:
+    0 0 0 5px rgba(255, 143, 176, 0.3),
+    0 22px 50px rgba(220, 90, 140, 0.32);
+}
+.hero-badge {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), var(--accent-deep));
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(220, 90, 140, 0.38);
+}
+
+/* ===== コメント枠（全体メッセージ） ===== */
+.message-frame {
+  max-width: 560px;
+  margin: 2.2rem auto 0;
+  padding: 1.5rem 1.8rem;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(214, 122, 156, 0.18);
+}
+.message-frame.is-empty {
+  background: transparent;
+  border: 2px dashed rgba(240, 109, 146, 0.4);
+  box-shadow: none;
+}
+.message-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  white-space: pre-wrap;
+}
+.message-placeholder {
+  color: rgba(173, 128, 146, 0.75);
+  font-size: 0.95rem;
+}
+
+/* ===== グリッド ===== */
+.grid-section {
+  margin-top: clamp(3rem, 8vw, 5rem);
+}
+.section-label {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--rose);
+  margin-bottom: 1.6rem;
+}
+.section-label::before,
+.section-label::after {
+  content: "\2661";
+  color: var(--accent);
+  margin: 0 0.6rem;
+}
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: clamp(0.8rem, 2.5vw, 1.4rem);
+}
+.grid-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+.grid-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 24px rgba(200, 100, 140, 0.22);
+  display: block;
+}
+.grid-year {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 2px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--rose);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+}
+.grid-item:hover {
+  transform: translateY(-5px) rotate(-1.5deg);
+}
+
+.anniv-footer {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.anniv-footer a {
+  color: var(--accent-deep);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.anniv-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ライトボックス ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(120, 55, 80, 0.42);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.25s ease both;
+}
+.lightbox-panel {
+  position: relative;
+  width: min(92vw, 720px);
+  max-height: 90vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  background: var(--card);
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(150, 60, 95, 0.4);
+  animation: popIn 0.3s cubic-bezier(0.2, 1.2, 0.4, 1) both;
+}
+.lightbox-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  color: var(--rose);
+  background: var(--pink-bg1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.lightbox-close:hover {
+  background: var(--pink-bg3);
+}
+.lightbox-figure {
+  display: grid;
+  place-items: center;
+}
+.lightbox-figure img {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 6px solid #fff;
+  box-shadow: 0 16px 40px rgba(200, 100, 140, 0.3);
+}
+.lightbox-meta {
+  text-align: center;
+}
+.lightbox-year {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--rose);
+  margin-bottom: 0.9rem;
+}
+.comment-frame {
+  padding: 1.2rem 1.4rem;
+  background: var(--pink-bg1);
+  border-radius: 18px;
+  text-align: left;
+}
+.comment-frame.is-empty {
+  background: transparent;
+  border: 2px dashed rgba(240, 109, 146, 0.4);
+  text-align: center;
+}
+.comment-body {
+  font-size: 1rem;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+.comment-placeholder {
+  color: rgba(173, 128, 146, 0.75);
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== モーション低減 ===== */
+@media (prefers-reduced-motion: reduce) {
+  .bg-heart,
+  .intro-card-inner,
+  .intro-hero-inner {
+    animation: none !important;
+  }
+  .intro-card-inner,
+  .intro-hero-inner {
+    opacity: 1;
+    transform: none;
+  }
+  .gallery {
+    transition: none;
+  }
+}
