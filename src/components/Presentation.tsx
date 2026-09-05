@@ -34,6 +34,17 @@ function PresentationItem({ imageUrl, titleKey, contentUrlKey, youtubeUrlKey }: 
 export function Presentations() {
   const presentations = [
     {
+      imageUrl: "/presentations/droidkaigi2026_session.jpg",
+      titleKey: "about.presentation.droidkaigi2026_session.title",
+      contentUrlKey: "about.presentation.droidkaigi2026_session.speakerdeck",
+      youtubeUrlKey: "about.presentation.droidkaigi2026_session.youtube"
+    },
+    {
+      imageUrl: "/presentations/droidkaigi2026_poster.jpg",
+      titleKey: "about.presentation.droidkaigi2026_poster.title",
+      contentUrlKey: "about.presentation.droidkaigi2026_poster.speakerdeck"
+    },
+    {
       imageUrl: "/presentations/hatoko.png",
       titleKey: "about.presentation.hatoko2026.title",
       contentUrlKey: "about.presentation.hatoko2026.url"
